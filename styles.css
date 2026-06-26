@@ -1,13 +1,124 @@
 /* CSS by Cooper Hill*/
 /* Color Palette:
-    Vintage Lavender: #8D5A97
-    Dusty Mauve: #907F9F   
-    Pale Slate: #a4a5aE
-    Ash Gray: #b0c7bd
-    Celadon: #b8ebd0
+    Aquamarine: #A5F8D3
+    Flush Pop: #F5B0CB   
+    Orchid #DC6ACF
+    Dusty Grape: #745C97
+    Space Indigo: #39375B
+    White Smoke: #F4F6F4
 */
 
 /* Global Styles MOBILE FIRST */
 body{
-    background-color: #b0c7bd;
+    display: block grid;
+    font: Verdana;
+    background-color: #F4F6F4;
+    min-width: 500px; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+header{
+    justify-content: center;
+    background-color: #F5B0CB;
+    text-align: center;
+    color: #39375B;
+    border: 10px solid #A5F8D3;
+    border-radius: 10px;
+}
+h1{
+    font-size: 40px;
+    font-family:cursive;
+    font-weight: bolder;
+    text-shadow: 1px 1px 3px #DC6acf ;
+}
+header p{
+    font-family: cursive;
+    font-size: 20px;
+}
+nav ul{
+    display: block flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav a{
+    border: 3px solid #A5F8D3;
+    background-color:#F5B0CB;
+    text-decoration: none;
+    color: #39375B;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: .5rem 1rem;
+    text-shadow: 1px 1px 3px #DC6acf ;
+    border-radius: 10px;
+}
+
+nav a:hover{
+    background-color:#A5F8D3;
+    text-decoration: underline;
+    text-shadow: 2px 2px 3px #39375B ;
+}
+
+ main{
+    background-color: #A5F8D3;
+    color:#39375B;
+    font-size: medium;
+    padding: 10px;
+    border-radius: 10px;
+ }
+ main a{
+    text-decoration: none;
+    color: #745C97;
+    background-color: #F4F6F4;
+    border-radius: 50px;
+    padding: 5px;
+ }
+h2{
+    border-radius: 10px;
+    font-family: cursive;
+    text-align: center;
+    background-color:#F5B0CB;
+    text-shadow: 1px 1px 3px #DC6acf ;
+ }
+ h3{ 
+    text-align: center;
+    text-decoration: underline;
+ }
+ #intro h4{
+    text-align: center;
+    text-decoration: underline;
+ }
+
+ #skill ul{
+    list-style:square
+ }
+ footer{
+    font-size:10px;
+    text-align: center;
+ }
+ 
+ 
+
+@media screen and (min-width: 800px){
+    body{
+        /*delete after complete*/
+        background-color: #b0c7f0;
+    }
+    section{
+        text-align: center;
+        display: block grid;
+    }
+    #skill ul{
+        list-style:none;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        text-decoration: underline;
+    }
+    #exp, #edu p{
+        text-align: left;
+    }
+    #exp, #edu h3{
+        text-align: left;
+    }
 }
